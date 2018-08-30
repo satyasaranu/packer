@@ -21,13 +21,14 @@
     "ami_name": "cheftest01 {{timestamp}}"
     }],
 
-    "provisioners": {
+    "provisioners": [ {
           "type": "shell",
            "inline": [
               "/usr/bin/yum -y update",
               "/usr/bin/curl -L https://omnitruck.chef.io/install.sh | sudo bash"            
     ]
   }
+]
 }
 
       
