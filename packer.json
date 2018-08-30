@@ -1,7 +1,7 @@
 {
   "variables": {
-    "ami_name": "ami-6871a115",
-    "region": "us-est-1"   
+    "ami_name": "",
+    "region": ""   
   },
 
   
