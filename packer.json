@@ -18,7 +18,7 @@
           "type": "shell",
            "inline": [
               "sudo /usr/bin/yum -y update",
-              "sudo /usr/bin/yum -y install wget",
+              "sudo /usr/bin/yum -y install wget,unzip",
               "sudo /usr/bin/curl -L https://omnitruck.chef.io/install.sh | sudo bash",
               "sudo mkdir /cookbooks; cd /cookbooks",
               "sudo /usr/bin/wget https://github.com/chef-cookbooks/tomcat/archive/master.zip",
