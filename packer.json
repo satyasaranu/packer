@@ -22,8 +22,8 @@
               "sudo /usr/bin/curl -L https://omnitruck.chef.io/install.sh | sudo bash",
               "sudo mkdir /cookbooks; cd /cookbooks",
               "sudo /usr/bin/wget https://supermarket.chef.io/cookbooks/motd/download",
-              "sudo /usr/bin/tar -xvf motd.tgz",
-              "sudo chef-cleint --local-mode"
+              "sudo ls -l ",
+               "sudo chef-cleint --local-mode"
                          
     ]
   }
