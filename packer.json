@@ -20,10 +20,7 @@
               "sudo /usr/bin/yum -y update",
               "sudo /usr/bin/yum -y install wget unzip",
               "sudo /usr/bin/curl -L https://omnitruck.chef.io/install.sh | sudo bash",
-              "sudo mkdir /cookbooks; cd /cookbooks",
-              "sudo /usr/bin/wget https://github.com/chef-cookbooks/tomcat/archive/master.zip",
-              "sudo ls -l ; unzip master.zip ",
-               "sudo /bin/chef-client --local-mode"
+              "sudo /bin/chef-client "
                          
     ]
   }
