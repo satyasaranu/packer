@@ -8,11 +8,12 @@ pipeline {
         string(name:'AWS_REGION', defaultValue:'us-east-1', description:'please enter Region')
     }
     stages {
-        stage("build") {
+        stage("build AMI") {
         steps {
            
-            withAWS(region:'us-east-1',credentials:'cafb2209-ed5a-4bf1-a9cb-b244e7b77186')
+            withAWS(region:'us-east-1',credentials:'d4ccaa7b-7efd-4318-9592-1f8a44cd79fb')
             {
+            sh "echo Packer is building AMI using RHEL image: ${params.AMI_ID} in ${params.AWS_REGION} Region"
             sh "${packer_home}/packer build -var ami_name=${params.AMI_ID} -var region=${params.AWS_REGION}  packer.json"    
             }
             }
